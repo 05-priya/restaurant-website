@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>login.com</title><br>
+	<link rel="stylesheet" type="text/css" href="log.css">
+	<style type="text/css">
+		label{
+			width: 200px;
+			display:inline-block;
+			color:black;		
+		}
+	</style>
+</head>
+	
+
+<div class="container">
+
+    <h1 align="center" > LOGIN</h1>
+
+
+<form >
+	<div class="c1">
+	<label >EMAIL</label><br><br>
+	<input type="email"  id="username" required>
+	<br><br>
+	<label>PASSWORD</label>
+    <br><br>
+	<input type="password"  id="password" required>
+	<br><br>
+<center>
+    <button onclick="Redirect(event)">login</button>
+	</center>
+</form>
+
+<script>
+
+function Redirect(event) {
+    event.preventDefault();
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if(username&&password){
+    location.href="home.html";
+    alert("login successfully")
+    }
+}
+
+</script>
+          
+</body>
+</html>
